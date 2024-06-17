@@ -20,3 +20,4 @@ Notes
 8. The models classes have been made for you. It is placed in models folder.
 9. (19 min) Create list of users page.
 10. (35 min) Create users table.
+11. (36 min) populate table in specific user using a loop.

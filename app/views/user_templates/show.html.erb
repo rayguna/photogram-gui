@@ -1,5 +1,6 @@
+
 <h1> <%=@the_user.username%> </h1>
-<%=@the_user.inspect%>
+
 <dl>
   <dt>
     ID
@@ -14,7 +15,7 @@
   <dd>
     <form action="/update_user/102" method="post">
       <label for="browser_username">Username</label>
-      <input id="browser_username" type="text" name="input_username" value=austin>
+      <input id="browser_username" type="text" name="input_username" value=<%=@the_user.username%>>
 
       <button>Update user</button>
     </form>
@@ -44,4 +45,16 @@
     <th>
     </th>
   </tr>
+
+
+  <%@the_user.own_photos.each do |a_photo|%>
+    <tr>
+      <td><img src="<%=a_photo.image%>"></td>
+      <td><%=@the_user.username%></td>
+      <td><%=a_photo.caption%></td>
+      <td><%=a_photo.created_at%></td>
+      <td><a href=""> Show Details</a></td>
+    </tr>
+  <%end%>
+
 </table>
