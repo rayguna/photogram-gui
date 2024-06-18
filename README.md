@@ -6,6 +6,8 @@ Lesson: https://learn.firstdraft.com/lessons/153-photogram-gui
 
 Video: https://share.descript.com/view/sYmmL9OgLIN
 
+Grading: https://grades.firstdraft.com/resources/873b989a-f375-48ca-80b5-5a506385b782
+
 <hr>
 
 Notes
@@ -27,3 +29,5 @@ Notes
 15. (54 min) Fix Show details link to photos.
 16. (56 min) Work on Photo Details (show.html.erb) page.
 17. (1:05 min) Add functionality to "Delete this photo" link and "Update photo" button.
+18. (1:17 min) Build the form for photos page.
+19. (1:23 min) Make "Add Photo" button on photo page functional.
