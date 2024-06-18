@@ -50,7 +50,8 @@
     </td>
 
     <td>
-      <%=User.where(:id => a_photo.owner_id).first.username%>
+      <!--<%=User.where(:id => a_photo.owner_id).first.username%>-->
+      <%=a_photo.poster.username%> <!--use a shortcut--> 
     </td>
 
     <td>

@@ -21,3 +21,8 @@ Notes
 9. (19 min) Create list of users page.
 10. (35 min) Create users table.
 11. (36 min) populate table in specific user using a loop.
+12. (42 min) Set up the navbar.
+13. (46 min) Make the users show details link work.
+14. (48 min) Make photos controller work.
+15. (54 min) Fix Show details link to photos.
+16. (56 min) Work on Photo Details (show.html.erb) page.

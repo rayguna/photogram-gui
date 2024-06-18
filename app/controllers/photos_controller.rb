@@ -8,21 +8,16 @@ class PhotosController < ApplicationController
   end  
 
   def show
+
+    #Parameters: {"path_id=>"777"}
+
+    url_id = params.fetch("path_id")
+
+    matching_photos = Photo.where({:id => url_id})
     
+    @the_photo = matching_photos.at(0)
+
     render({:template => "photo_templates/show"})
 
-    #url_username = params.fetch("path_username")
-    
-    #params.fetch("path_username")
-    
-    #matching_usernames = User.where({:username => url_username})
-    
-    #@the_user = matching_usernames.first
-
-    #if @the_user == nil
-    #  redirect_to("/404")
-    #else
-    #  render({:template => "user_templates/show"})
-    #end
   end  
 end
