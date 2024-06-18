@@ -79,6 +79,11 @@ class PhotosController < ApplicationController
     #render({:template => "photo_templates/update"})
     redirect_to("/photos/" + the_photo.id.to_s)
 
+  end
+
+  def add_comment
+  
+    #redirect_to("/photos/" + the_photo.id.to_s)
 
   end
 
