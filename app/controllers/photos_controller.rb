@@ -71,8 +71,6 @@ class PhotosController < ApplicationController
     input_image = params.fetch("input_image")
     input_caption = params.fetch("input_caption")
 
-    the_photo.save
-
     the_photo.image = input_image
     the_photo.caption = input_caption 
 

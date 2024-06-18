@@ -21,5 +21,28 @@ class UsersController < ApplicationController
     else
       render({:template => "user_templates/show"})
     end
-  end  
+  end
+
+  def update
+
+    #<ActionController::Parameters {"input_username"=>"cristina", "controller"=>"users", "action"=>"update", "modify_id"=>"102"} permitted: false>
+
+    the_id = params.fetch("modify_id")
+
+    matching_user = User.where({:id => the_id}) 
+
+    the_user = matching_user.at(0)
+
+    input_username = params.fetch("input_username")
+
+    the_user.username = input_username
+
+    the_user.save
+
+    #redirect_to("/users/" + @the_user.id)
+    #are redirect_to and render the same?
+    render({:template => "users/" + the_user.id.to_s})
+
+  end
+  
 end
