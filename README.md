@@ -26,3 +26,4 @@ Notes
 14. (48 min) Make photos controller work.
 15. (54 min) Fix Show details link to photos.
 16. (56 min) Work on Photo Details (show.html.erb) page.
+17. (1:05 min) Add functionality to "Delete this photo" link and "Update photo" button.
