@@ -39,10 +39,17 @@ class UsersController < ApplicationController
 
     the_user.save
 
-    #redirect_to("/users/" + @the_user.id)
-    #are redirect_to and render the same?
-    render({:template => "users/" + the_user.id.to_s})
+    redirect_to("/users/" + the_user.username.to_s)
+    
+  end
 
+  def create
+    new_user = User.new
+    new_user.username = params.fetch("input_username")
+
+    new_user.save
+
+    redirect_to("/users/#{new_user.username}")
   end
   
 end
