@@ -81,7 +81,8 @@ class PhotosController < ApplicationController
 
   def comment
   
-    redirect_to("/photos/" + the_photo.input_photo_id.to_s)
+    route = params.fetch("input_photo_id")  
+    redirect_to("/photos/" + route.to_s)
 
   end
 
