@@ -7,8 +7,6 @@ class PhotosController < ApplicationController
     render({:template => "photo_templates/index"})
   end  
 
-
-
   def show
 
     #Parameters: {"path_id=>"777"}
@@ -81,9 +79,9 @@ class PhotosController < ApplicationController
 
   end
 
-  def add_comment
+  def comment
   
-    #redirect_to("/photos/" + the_photo.id.to_s)
+    redirect_to("/photos/" + the_photo.input_photo_id.to_s)
 
   end
 
