@@ -31,3 +31,5 @@ Notes
 17. (1:05 min) Add functionality to "Delete this photo" link and "Update photo" button.
 18. (1:17 min) Build the form for photos page.
 19. (1:23 min) Make "Add Photo" button on photo page functional.
+20. You can get ohotos from chicagobooth.edu
+21. (1:26 min)
