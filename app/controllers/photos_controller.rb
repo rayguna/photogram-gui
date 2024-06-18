@@ -79,11 +79,23 @@ class PhotosController < ApplicationController
 
   end
 
-  def comment
+  # def comment
   
-    route = params.fetch("input_photo_id")  
-    redirect_to("/photos/" + route.to_s)
+  #   #pull up the record that matches the photo_id
+  #   photo_id = params.fetch("input_photo_id")
 
-  end
+  #   author_id = params.fetch("input_author_id")
+
+  #   matching_photo = Photo.where(:id => photo_id)
+
+  #   a_new_comment = params.fetch("input_comment")
+
+  #   #append a dictionary
+  #   matching_photo[0].comments.append()
+
+  #   #route = params.fetch("input_photo_id")  
+  #   redirect_to("/photos/" + route.to_s)
+
+  # end
 
 end

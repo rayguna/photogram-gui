@@ -33,3 +33,10 @@ Notes
 19. (1:23 min) Make "Add Photo" button on photo page functional.
 20. You can get sample photos from chicagobooth.edu
 21. (1:30 min)
+22. Go stuck making the "Add comment" button to work. Initially tried to append a dictionary to the photo object, but finally realized Comment is its own table. I had to create a separate controller to make a class with its own methods for comments. Subsequently, I had to link the comments table to the photo table to link the two together.
+
+Bottom line: 
+- Joining tables is a convenient way to link different groups of information.
+- Each table can be treated as an object with its own methods.
+- Tables are linked by foreign id.
+***
